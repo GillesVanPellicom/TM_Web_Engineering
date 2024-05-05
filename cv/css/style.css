@@ -1,0 +1,57 @@
+.content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.repo-grid {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-bottom: 3%;
+
+}
+
+.repo-grid a {
+    text-decoration: none;
+}
+
+.about-me {
+    width: 70%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding-bottom: 3%;
+}
+
+.skill-middle {
+    margin-right: 3%;
+    margin-left: 3%;
+    width: 40%;
+
+}
+
+.skill-left,
+.skill-right {
+    width: 18.5%;
+    padding-right: 4%;
+    padding-left: 4%;
+
+}
+
+.skill-right {
+    display: flex;
+    align-items: center;
+    height: 28rem;
+}
+
+.skill-right img {
+    height: 19rem;
+}

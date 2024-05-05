@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    <!-- meyerweb reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- includes -->
+    <script>
+        $(document).ready(() => {
+            $("#header-wrapper").load("/include/header.html", () => {
+                document.getElementById("cv-li").classList.add("navbar-selected");
+            });
+        });
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <div id="header-wrapper"></div>
+
+    <div class="content">
+
+        <div class="about-me seperator-bottom">
+            <h1>About me</h1>
+            <p>Hello! My name is Gilles Van pellicom and I'm <span
+                    style="color: var(--color-selectable-deselected);">(mostly)</span>
+                a backend software engineer.</p>
+
+            <p>
+                I'm fascinated by what most programmers find to be the boring part of programming. Algorithms, software
+                architecture, math and difficult problems in general are my thing. I'm the kind of person who designs
+                his own CPU for fun.
+            </p>
+            <p>
+                I like backend work most of all, but I also do know my way around some front-end design, as you can see. I have a quite
+                thorough
+                grounding in UI/UX theory and UI design tools and libraries such as Qt and CSS which makes this project,
+                among
+                others, possible.
+            </p>
+            <p>If you'd like to see more, please take a look at my <a href="#prev-projects">previous projects</a></p>
+
+
+        </div>
+        <h1>my skills</h1>
+
+        <div class="skills seperator-bottom">
+            
+            <div class="skill-left seperator-right">
+                <img src="https://skillicons.dev/icons?i=windows,apple,ubuntu,bash&theme=dark">
+                <img src="https://skillicons.dev/icons?i=powershell,c,cpp,qt&theme=dark">
+                <img src="https://skillicons.dev/icons?i=python,java,cmake,css&theme=dark">
+                <img src="https://skillicons.dev/icons?i=mysql,php,js,html&theme=dark">
+                <img src="https://skillicons.dev/icons?i=aws,docker,nginx,bootstrap&theme=dark">
+                <img src="https://skillicons.dev/icons?i=azure,grafana,maven,xd&theme=dark">
+                <img src="https://skillicons.dev/icons?i=github,vscode,clion,idea&theme=dark">
+                <img src="https://skillicons.dev/icons?i=md,matlab,latex,obsidian&theme=dark">
+
+            </div>
+            <div class="skill-middle">
+                <p>
+                    Aside from having a good theoretical grounding in subjects pertaining to computer science, I am able to work with most operating systems, a good complement of programming languages from high to low level, cloud services, IDE's, tools and even some typesetting languages for formal work. 
+                </p>
+                <p>
+                    But out of all programming languages, I'm most proficient with C++.
+                </p>
+            </div>
+
+            <div class="skill-right seperator-left">
+                <img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="">
+            </div>
+        </div>
+        <h1 id="prev-projects">Previous projects</h1>
+        <div class="repo-grid seperator-bottom">
+            
+            <a href="https://github.com/GillesVanPellicom/Computer-Architecture">
+                <picture>
+                    <source
+                        srcset="https://github-readme-stats.vercel.app/api/pin/?username=gillesvanpellicom&repo=Computer-Architecture&theme=dark"
+                        media="(prefers-color-scheme: dark)" />
+                    <source srcset="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true"
+                        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                    <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true" />
+                </picture>
+            </a>
+            <a href="https://github.com/GillesVanPellicom/UA_ba1-software-engineering">
+                <picture>
+                    <source
+                        srcset="https://github-readme-stats.vercel.app/api/pin/?username=gillesvanpellicom&repo=UA_ba1-software-engineering&theme=dark"
+                        media="(prefers-color-scheme: dark)" />
+                    <source srcset="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true"
+                        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                    <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true" />
+                </picture>
+            </a>
+            <a href="https://github.com/GillesVanPellicom/PracticeEnterprises">
+                <picture>
+                    <source
+                        srcset="https://github-readme-stats.vercel.app/api/pin/?username=gillesvanpellicom&repo=PracticeEnterprises&theme=dark"
+                        media="(prefers-color-scheme: dark)" />
+                    <source srcset="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true"
+                        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                    <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true" />
+                </picture>
+            </a>
+            <a href="https://github.com/GillesVanPellicom/CodingProblems_2023">
+                <picture>
+                    <source
+                        srcset="https://github-readme-stats.vercel.app/api/pin/?username=gillesvanpellicom&repo=CodingProblems_2023&theme=dark"
+                        media="(prefers-color-scheme: dark)" />
+                    <source srcset="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true"
+                        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                    <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true" />
+                </picture>
+            </a>
+            <a href="https://github.com/GillesVanPellicom/CPU_Project">
+                <picture>
+                    <source
+                        srcset="https://github-readme-stats.vercel.app/api/pin/?username=gillesvanpellicom&repo=CPU_Project&theme=dark"
+                        media="(prefers-color-scheme: dark)" />
+                    <source srcset="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true"
+                        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                    <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true" />
+                </picture>
+            </a>
+            <a href="https://github.com/GillesVanPellicom/PracticeEnterprises">
+                <picture>
+                    <source
+                        srcset="https://github-readme-stats.vercel.app/api/pin/?username=gillesvanpellicom&repo=PracticeEnterprises&theme=dark"
+                        media="(prefers-color-scheme: dark)" />
+                    <source srcset="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true"
+                        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                    <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true" />
+                </picture>
+            </a>
+
+        </div>
+
+    </div>
+    <footer>
+        Copyright © Thomas More Mechelen-Antwerpen vzw -
+        Campus De Nayer - Professionele bachelor elektronica-ict -
+        2024
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- meyerweb reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- specific style -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- includes -->
+    <script>
+        $(document).ready(() => {
+            $("#header-wrapper").load("/include/header.html", () => {
+                document.getElementById("contact-li").classList.add("navbar-selected");
+            });
+        });
+    </script>
+
+    <!-- validation script -->
+    <script src="./script/validate.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="header-wrapper"></div>
+
+    <div class="content">
+        <div class="left">
+            <h1>contact me</h1>
+            <p>Need to get in touch? Fill out the form and I'll get back to you as soon as I can.</p>
+        </div>
+
+        <div class="middle seperator-left"></div>
+        <div class="right">
+            <form name="contact" action="./confirmed/" method="POST" onsubmit="return validateForm()">
+                <h3>name</h3>
+                <input type="text" class="form-text" name="name" id="form-name-input">
+                <p id="form-name-errorlabel" class="error invisible">-1</p>
+
+                <h3>surname</h3>
+                <input type="text" class="form-text" name="surname" id="form-surname-input">
+                <p id="form-surname-errorlabel" class="error invisible">-1</p>
+
+                <h3>email</h3>
+                <input type="text" class="form-text" name="email" id="form-email-input">
+                <p id="form-email-errorlabel" class="error invisible">-1</p>
+
+                <h3>message</h3>
+                <textarea name="message" class="form-textarea" cols="30" rows="10" id="form-message-input"></textarea>
+                <p id="form-message-errorlabel" class="error invisible">-1</p>
+
+                <div class="btn-wrapper">
+                    <input type="submit" value="Submit message" class="btn-gold">
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    <footer>
+        Copyright © Thomas More Mechelen-Antwerpen vzw -
+        Campus De Nayer - Professionele bachelor elektronica-ict -
+        2024
+    </footer>
+
+</body>
+
+</html>

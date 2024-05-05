@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <!-- meyerweb reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- includes -->
+    <script>
+        $(document).ready(() => {
+            $("#header-wrapper").load("/include/header.html", () => {
+                document.getElementById("project-li").classList.add("navbar-selected");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="header-wrapper" class=""></div>
+    <div class="welcome-wrapper">
+        <div class="welcome">
+            <p class="welcome-text">Play chess like never before using C++</p>
+
+            <h4>What do you mean "that's already been done"?</h4>
+        </div>
+    </div>
+    <div class="content ">
+        <div class="content-grid seperator-bottom">
+            <div class="grid-item">
+                <h2>Feature rich</h2>
+                <p>We have all the basics such as saving, loading, undo and redo covered. You can also visualise all
+                    possible moves and threats in case you are a learning player.</p>
+            </div>
+            <div class="grid-item ">
+                <div class="grid-img grid-img-1"></div>
+            </div>
+
+            <div class="grid-item grid-img-2"></div>
+            <div class="grid-item">
+                <h2>Colorschemes</h2>
+                <p>Infinite diversity in infinite combinations. Switch between any combination of colors by using either
+                    the built-in colorschemes, or make your own using our simple templates.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <h2>Documented</h2>
+                <p>All code, outward and inward facing, is documented using javadoc-style comments so that the document
+                    generation tool of your choice such as doxygen or Sphinx can easely generate a comprehensive manual.
+                </p>
+            </div>
+            <div class="grid-item grid-img-3"></div>
+        </div>
+        <div class="diagram-wrapper seperator-bottom">
+            <div class="diagram-left">
+                <h1>diagram</h1>
+                <p>
+                    This diagram is a high-level overview of the structure of the chess program. The meaning of the
+                    colors is explained in the bottom-right corner.
+                </p>
+                <p>
+                    The main class has an instance of the Game object, which is the overarching class of the program.
+                    This class inherits from ChessWindow and includes the non-local type QApplication and the local
+                    abstract type ChessPiece. These parts contain the chess logic.
+                </p>
+                <p>The UI is handled by ChessWindow and ChessScene. Most of the UI code is found in ChessScene. This is
+                    all done using inheritance and wrappers but there is one peculiarity: the click even listener. This
+                    listener can be found in ChessScene but this has to be responded to in the Game class, so in this
+                    case we work using a callback.</p>
+
+
+            </div>
+            <div class="diagram-right"><img src="/img/diagram.png"></div>
+
+        </div>
+
+    </div>
+    <footer>
+        Copyright © Thomas More Mechelen-Antwerpen vzw -
+        Campus De Nayer - Professionele bachelor elektronica-ict -
+        2024
+    </footer>
+</body>
+
+</html>

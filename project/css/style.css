@@ -1,0 +1,123 @@
+.welcome-wrapper {
+    background-image: url("/img/project-2.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid var(--color-seperator);
+    margin-bottom: 2%;
+}
+
+.welcome {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: none;
+}
+
+.welcome-text {
+    line-height: 1.4em;
+    font-weight: 700;
+    font-size: 50pt;
+    letter-spacing: 1pt;
+    margin-bottom: 0.5%;
+}
+
+.welcome>h4 {
+    margin-top: 0;
+    padding-top: 0;
+    color: var(--color-selectable-deselected);
+}
+
+.content {
+    align-items: center;
+    height: 100%;
+    text-align: left;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 6%;
+    row-gap: 0;
+    width: 90%;
+    height: 85rem;
+    padding-bottom: 4%;
+
+}
+
+.grid-item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-height: 100%;
+    width: 100%;
+    height: 24rem;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-img {
+    position: absolute;
+    /* Add this line */
+    top: 0;
+    /* Add this line */
+    left: 0;
+    /* Add this line */
+    width: 100%;
+    /* Add this line */
+    height: 100%;
+    /* Add this line */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Add this line */
+
+}
+
+.grid-img-1 {
+    border-radius: 0.5em;
+
+    background-image: url("/img/project-3.png");
+}
+
+.grid-img-2 {
+    border-radius: 0.5em;
+
+    background-image: url("/img/project-5.png");
+
+}
+
+.grid-img-3 {
+    border-radius: 0.5em;
+
+    background-image: url("/img/project-4.png");
+}
+
+.diagram-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.diagram-left {
+    margin-right: 5%;
+}
+
+.diagram-right {}
+
+.diagram-wrapper p {
+    margin-bottom: 5%;
+}

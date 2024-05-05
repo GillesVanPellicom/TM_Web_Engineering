@@ -1,0 +1,312 @@
+/* global */
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+/* variables */
+:root {
+    /* color */
+    --color-seperator: #333333;
+    --color-selectable-deselected: #8a8a8a;
+    --color-selectable-selected: #ffffff;
+    --color-text-main: #dbdbdb;
+    --color-underline: #737373;
+    --color-background-main: #161616;
+    --color-background-secondary: #1c1c1c;
+
+    /* misc */
+    --default-border-radius: 0.5rem;
+}
+
+/* defaults */
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-optical-sizing: auto;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-size: 15.5pt;
+    letter-spacing: 1pt;
+
+
+    text-align: justify;
+    background-color: var(--color-background-main);
+    color: var(--color-text-main);
+}
+
+p {
+    margin-bottom: 1%;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--color-seperator);
+}
+
+h1 {
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36pt;
+    letter-spacing: 0.8pt;
+    margin-bottom: 2%;
+}
+
+h2 {
+    line-height: normal;
+    text-decoration: underline;
+    text-decoration-color: var(--color-underline);
+    font-weight: 700;
+    font-size: 28pt;
+    letter-spacing: 0.8pt;
+    margin-bottom: 3%;
+}
+
+h3 {
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16pt;
+    letter-spacing: 2pt;
+    margin-bottom: 1%;
+}
+
+h4 {
+    line-height: normal;
+    font-weight: 300;
+    font-size: 12pt;
+    letter-spacing: 0.8pt;
+    margin-bottom: 0.1%;
+}
+
+h5 {
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 11pt;
+    letter-spacing: 1.5pt;
+    margin-bottom: 1%;
+
+}
+
+a {
+    color: var(--color-selectable-deselected);
+    transition: color .4s;
+    position: relative;
+    padding-right: 20px;
+}
+
+p>a::after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%238a8a8a' class='bi bi-box-arrow-up-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z'/%3E%3C/svg%3E");
+    /* Replace 'link-icon.svg' with the path to your SVG */
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    /* Adjust width and height of SVG as per your design */
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-70%);
+    padding-right: 2px;
+}
+
+
+a:hover,
+a:hover::after {
+    transition: filter 0.4s;
+    color: white;
+    filter: brightness(2);
+}
+
+/* defaults end */
+
+/* scrollbar */
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #242424;
+
+    border-radius: 20px;
+    min-width: 10px
+}
+
+/* styling classes */
+/* seperators */
+.seperator-right {
+    border-right: 1px solid var(--color-seperator);
+
+}
+
+.seperator-left {
+    border-left: 1px solid var(--color-seperator);
+
+}
+
+.seperator-top {
+    border-top: 1px solid var(--color-seperator);
+
+}
+
+.seperator-bottom {
+    padding-bottom: 1%;
+    border-bottom: 1px solid var(--color-seperator);
+    margin-bottom: 3.5%;
+}
+
+/* buttons */
+.btn-red {
+    background-color: #541b1f;
+    border: 1px solid #aa2429;
+    padding: 0.75rem;
+    color: var(--text-main);
+    border-radius: var(--default-border-radius);
+
+}
+
+.btn-red:hover {
+    background-color: #481a1d;
+}
+
+.btn-blue {
+    background-color: #0f3058;
+    border: 1px solid #0954a5;
+    padding: 0.75rem;
+    color: var(--text-main);
+    border-radius: var(--default-border-radius);
+
+}
+
+.btn-blue:hover {
+    background-color: #102a4c;
+}
+
+.btn-gold {
+    background-color: #7e6500;
+    border: 1px solid #f0c000;
+    padding: 0.75rem;
+    color: var(--text-main);
+    border-radius: var(--default-border-radius);
+
+}
+
+.btn-gold:hover {
+    background-color: #745c00;
+}
+
+.btn-red,
+.btn-blue,
+.btn-gold {
+    font-weight: 700;
+    font-size: 14pt;
+    letter-spacing: 0.8pt;
+    transition: background-color 0.4s;
+}
+
+/* styling classes end */
+
+
+/* navbar */
+header {
+
+    /* Stops sticky header clipping trough a element */
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #000000;
+    border-bottom: 1px solid var(--color-seperator);
+
+}
+
+header div {
+    padding-top: 0.6%;
+    margin-left: 7%;
+}
+
+header div,
+header ul {
+    display: inline-block;
+}
+
+header a {
+    text-decoration: none;
+    color: 8a8a8a;
+    transition: color .4s;
+    padding-right: 0px;
+}
+
+header a::after {
+    background-image: none;
+}
+
+header a:hover {
+    color: white;
+}
+
+
+.navbar-selected>a {
+    color: var(--text-main);
+}
+
+header ul {
+
+    float: right;
+    margin-right: 7%;
+}
+
+header ul li {
+    padding-top: 6.5%;
+    padding-bottom: 6.5%;
+    display: inline-block;
+    margin-left: 20px;
+
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16pt;
+    letter-spacing: 1pt;
+}
+
+.navbar-title {
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 420;
+    font-size: 35pt;
+    letter-spacing: 12pt;
+}
+
+/* navbar end */
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+
+    padding: 2.5%;
+    overflow: hidden;
+    background-color: var(--color-background-secondary);
+    border-top: 1px solid var(--color-seperator);
+    text-align: center;
+
+    line-height: normal;
+    font-weight: 300;
+    font-size: 12.5pt;
+    letter-spacing: 0.8pt;
+}
+
+/* footer end */

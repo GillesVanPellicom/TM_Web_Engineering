@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+
+    <!-- meyerweb reset -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .colors {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+            gap: 10px;
+        }
+
+        .colors>div {
+            height: 250px;
+            padding: 3%;
+            border-radius: 0.5rem;
+        }
+
+        .black-text {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="seperator-bottom">
+            <h1>disclaimer</h1>
+            <p>This page is not for production, therefore, to save time, production best practices were not applied.</p>
+            <p>This page is to serve as a style guide and an example only.</p>
+        </div>
+        <div class="seperator-bottom">
+            <h1>Typography</h1>
+            <h4>Neue Haas Grotesk 700 bold, 36 pt, 0.8 T, uppercase</h4>
+            <h1>Heading 1</h1>
+
+            <h4>Neue Haas Grotesk 700 bold, 28 pt, 0.8 T, underlined #737373</h4>
+            <h2>heading 2</h2>
+
+            <h4>Neue Haas Grotesk 500 medium, 16 pt, 2 T, uppercase</h4>
+            <h3>heading 3</h3>
+
+            <h4>Neue Haas Grotesk 300 medium, 16 pt, 0.8 T, uppercase</h4>
+            <h4>heading 4</h4><br>
+
+            <h4>Neue Haas Grotesk 700 bold, 14 pt, 0.8 T</h4>
+            <button class="btn-gold">buttons</button>
+        </div>
+
+        <div class="seperator-bottom">
+            <h1>Misc.</h1>
+            <p>All transition effects are .4s</p>
+            <p>All border radii are .5rem</p>
+            <h4>link with transition (must be in paragraph for icon)</h4>
+            <p>
+                <a href="#">Click me.</a>
+            </p><br>
+            <h3>buttons</h3>
+            <h4>Red button</h4>
+            <button class="btn-red">Red Button</button><br><br>
+
+            <h4>Blue button</h4>
+            <button class="btn-blue">Blue Button</button><br><br>
+
+            <h4>Gold button</h4>
+            <button class="btn-gold">Gold Button</button><br><br>
+
+        </div>
+
+
+        <h1>Color guide</h1>
+
+        <div class="colors seperator-bottom">
+            <div style="background-color: #333333;">
+                Seperator / Border <br>
+                Hex: #333333 <br>
+                HSB: 0° 0% 20%<br>
+                RGB: 51 51 51
+            </div>
+
+            <div style="background-color: #8a8a8a;">
+                Selectable deselected<br>
+                Hex: #8a8a8a<br>
+                HSB: 0° 0% 3%<br>
+                RGB: 8 8 8
+            </div>
+
+            <div style="background-color: #ffffff;" class="black-text">
+                Selectable selected<br>
+                Hex: #ffffff<br>
+                HSB: 0° 0% 100%<br>
+                RGB: 255 255 255
+            </div>
+
+            <div style="background-color: #dbdbdb;" class="black-text">
+                Text<br>
+                Hex: #dbdbdb<br>
+                HSB: 0° 0% 86%<br>
+                RGB: 219 219 219
+            </div>
+
+            <div style="background-color: #737373;">
+                Underline heading 2<br>
+                Hex: #737373<br>
+                HSB: 0° 0% 45%<br>
+                RGB: 115 115 115
+            </div>
+
+            <div style="background-color: #161616; border: 1px solid #333333;">
+                Background main<br>
+                Hex: #161616<br>
+                HSB: 0° 0% 9%<br>
+                RGB: 22 22 22
+            </div>
+
+            <div style="background-color: #1c1c1c;">
+                Background secondary<br>
+                Hex: #1c1c1c<br>
+                HSB: 0° 0% 11%<br>
+                RGB: 28 28 28
+            </div>
+
+            <div style="background-color: #541b1f; border: 1px solid #aa2429;">
+                Button red background<br>
+                Hex: #481a1d<br>
+                HSB: 356° 64% 28%<br>
+                RGB: 72 26 29<br>
+                <br>
+                Button red border<br>
+                Hex: #aa2429<br>
+                HSB: 358° 79% 67%<br>
+                RGB: 170 36 41
+            </div>
+
+            <div style="background-color: #0f3058; border: 1px solid #0954a5;">
+                Button blue background<br>
+                Hex: #102a4c<br>
+                HSB: 214° 79% 30%<br>
+                RGB: 16 42 76<br>
+                <br>
+                Button blue border<br>
+                Hex: #0954a5<br>
+                HSB: 211° 95% 65%<br>
+                RGB: 9 84 165
+            </div>
+            <div style="background-color: #866c00; border: 1px solid #f0c000;">
+                Button gold background<br>
+                Hex: #745c00<br>
+                HSB: 48° 100% 45%<br>
+                RGB: 116 92 0<br>
+                <br>
+                Button gold border<br>
+                Hex: #f0c000<br>
+                HSB: 48° 100% 47%<br>
+                RGB: 240 192 0
+            </div>
+        </div>
+        <div class="seperator-bottom">
+            <h1>paragraph example</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce
+                posuere,
+                magna
+                sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc
+                viverra
+                imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
+                In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+                pretium
+                mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Fusce aliquet pede non pede.
+                Suspendisse
+                dapibus lorem pellentesque magna. Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et
+                imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget sapien.
+                Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam erat volutpat. Sed at lorem in nunc
+                porta
+                tristique.
+            </p>
+            <p>
+                Proin nec augue. Quisque aliquam tempor magna. Pellentesque habitant morbi tristique senectus et
+                netus et malesuada fames ac turpis egestas. Nunc ac magna. Maecenas odio dolor, vulputate vel, auctor
+                ac,
+                accumsan id, felis. Pellentesque cursus sagittis felis.
+                Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus arcu, nec vulputate augue magna
+                vel
+                risus. Cras non magna vel ante adipiscing rhoncus. Vivamus a mi. Morbi neque. Aliquam erat volutpat.
+                Integer
+                ultrices lobortis eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis
+                egestas. Proin semper, ante vitae sollicitudin posuere, metus quam iaculis nibh, vitae scelerisque nunc
+                massa
+                eget pede. Sed velit urna, interdum vel, ultricies vel, faucibus at, quam. Donec elit est, consectetuer
+                eget,
+                consequat quis, tempus quis, wisi.
+                In in nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
+                Donec
+                ullamcorper fringilla eros. Fusce in sapien eu purus dapibus commodo. Cum sociis natoque penatibus et
+                magnis
+                dis
+                parturient montes, nascetur ridiculus mus. Cras faucibus condimentum odio. Sed ac ligula. Aliquam at
+                eros.
+                Etiam
+                at ligula et tellus ullamcorper ultrices. In fermentum, lorem non cursus porttitor, diam urna accumsan
+                lacus,
+                sed interdum wisi nibh nec nisl.
+                Ut tincidunt volutpat urna. Mauris eleifend nulla eget mauris. Sed cursus quam id felis.
+            </p>
+        </div>
+
+</body>
+
+</html>

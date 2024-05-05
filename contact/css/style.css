@@ -1,0 +1,96 @@
+.content {
+    flex-direction: row;
+    margin-bottom: 3.5%;
+
+}
+
+.left {
+    width: 100%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.right {
+    background-color: #232323;
+    border-radius: var(--default-border-radius);
+    padding: 1.5%;
+    border: 1px solid var(--color-seperator);
+    width: 70%;
+    margin-left: 3%;
+}
+
+
+.form-text {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-optical-sizing: auto;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-size: 12pt;
+    letter-spacing: 1pt;
+    color: var(--color-text-main);
+    padding: 1.5%;
+
+    border: 1px solid var(--color-seperator);
+    background-color: #161616;
+    resize: none;
+    width: 97%;
+    border-radius: var(--default-border-radius);
+    transition: border 0.4s;
+
+}
+
+
+.form-textarea {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-optical-sizing: auto;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-size: 12pt;
+    letter-spacing: 1pt;
+    color: #dbdbdb;
+    padding: 1.5%;
+
+    border: 1px solid var(--color-seperator);
+    background-color: #161616;
+    resize: none;
+    width: 97%;
+    border-radius: var(--default-border-radius);
+
+    transition: all 0.4s;
+    transition-property: border, color;
+
+
+}
+
+.form-textarea:focus,
+.form-text:focus {
+    color: white;
+    outline: none;
+    border: 1px solid #737373;
+}
+
+.btn-wrapper {
+    margin-top: 3%;
+    margin-bottom: 1.5%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    font-size: 16px;
+    color: red;
+    padding-bottom: 1.5%;
+}
+
+.error-input {
+    border: 1px solid red;
+}
+
+.invisible {
+    visibility: hidden;
+}
